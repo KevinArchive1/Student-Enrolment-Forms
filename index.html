@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="the_css.css">
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+
+    <ol>
+        <h3>Instructions:</h3>
+        <li>Fill the fields</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+    <main>
+        <div id="first">
+            <form action="self" method="post">
+                <fieldset>
+                    <legend><h3>Student Information</h3></legend>
+                    <div class="box">
+                        <label for="flname">Full Name :</label>
+                        <input class="input" type="text" id="flname" required placeholder="Full Name">
+                    </div>
+
+                    <div class="box">
+                        <label for="user_email">Email Address :</label>
+                        <input class="input" type="email" id="email" required placeholder="Email">
+                    </div>
+
+                    <div class="box">
+                        <label for="age">Age:</label>
+                        <input class="input" type="number" id="age" required placeholder="Age">
+                    </div>
+
+                    <div class="box">
+                        <label for="sex">Sex:</label> 
+                        <div id="radiobtn">                       
+                            <label for="male">
+                                <input type="radio" name="sex" id="male" value="Male" required>
+                                Male
+                            </label>
+                            <label for="female">
+                                <input type="radio" name="sex" id="female" value="Female">
+                                Female
+                            </label> 
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <label id="course" for="course">Course:</label>
+                        <select class="input" name="course" id="course" required>
+                            <option value="BSIT">BS-Information Technology</option>
+                            <option value="BSSW">BS-Social Work</option>
+                            <option value="BSPA">BS-Public Administration</option>
+                            <option value="BSCS">BS-Computer Science</option>
+                        </select>   
+                    </div>
+
+                    <div class="box">
+                        <label for="interests">Interests:</label>
+
+                        <div id="checkboxes">
+                            <label for="Web Development">
+                                <input type="checkbox" id="Web Development" value="Web Development">
+                                Web Development
+                            </label>
+    
+                            <label for="Data Science">
+                                <input type="checkbox" id="Data Science" value="Data Science">
+                                Data Science
+                            </label>
+    
+                            <label for="Networking">
+                                <input type="checkbox" id="Networking" value="Networking">
+                                Networking
+                            </label>
+                            
+                            <label for="Graphic Design">
+                                <input type="checkbox" id="Graphic Design" value="Graphic Design">
+                                Graphic Design
+                            </label>    
+                        </div>
+                    </div>
+
+                    <div class="box" id="submit">
+                        <button class="input" type="submit">Enroll Now</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="second">
+            <fieldset>
+                <legend><h3>Student List</h3></legend>
+                <div class="table-wrapper">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>Sex</th>
+                                <th>Course</th>
+                                <th>Interests</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Yan</td>
+                                <td>Yan123@gmail.com</td>
+                                <td>23</td>
+                                <td>Female</td>
+                                <td>BSSW</td>
+                                <td>Anime, Reading </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jobert</td>
+                                <td>Jobert123@gmail.com</td>
+                                <td>26</td>
+                                <td>Male</td>
+                                <td>BSCS</td>
+                                <td>Basketball</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Jerwin</td>
+                                <td>Jerwin123@gmail.com</td>
+                                <td>20</td>
+                                <td>Male</td>
+                                <td>BSPA</td>
+                                <td>Reading</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Samuel</td>
+                                <td>Samuel123@gmail.com</td>
+                                <td>19</td>
+                                <td>Male</td>
+                                <td>BSIT</td>
+                                <td>Programming</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Rod</td>
+                                <td>Rod123@gmail.com</td>
+                                <td>25</td>
+                                <td>Male</td>
+                                <td>BSIT</td>
+                                <td>Adventuring, Running</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Kevin</td>
+                                <td>Kevin123@gmail.com</td>
+                                <td>19</td>
+                                <td>Male</td>
+                                <td>BSPA</td>
+                                <td>Sleeping</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Ash</td>
+                                <td>Ash123@gmail.com</td>
+                                <td>24</td>
+                                <td>Male</td>
+                                <td>BSIT</td>
+                                <td>Anime</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Ashe</td>
+                                <td>Ashe123@gmail.com</td>
+                                <td>22</td>
+                                <td>Female</td>
+                                <td>BSIT</td>
+                                <td>Programming</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Little John</td>
+                                <td>LittleJohn123@gmail.com</td>
+                                <td>28</td>
+                                <td>Male</td>
+                                <td>BSPA</td>
+                                <td>Writting</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Tyler</td>
+                                <td>Tyler123@gmail.com</td>
+                                <td>20</td>
+                                <td>Male</td>
+                                <td>BSCS</td>
+                                <td>Walking</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </fieldset>
+    </main>
+</body>
+</html>
