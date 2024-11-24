@@ -46,6 +46,33 @@ body, html {
     }
 }
 
+@keyframes neon-border {
+    0% {
+        border-color: #2AC9FA;
+        box-shadow: 
+            0 0 5px #2AC9FA,
+            0 0 10px #2AC9FA,
+            0 0 15px #2AC9FA,
+            0 0 20px #2AC9FA;
+    }
+    50% {
+        border-color: #2AC9FA;
+        box-shadow: 
+            0 0 10px #2AC9FA,
+            0 0 20px #2AC9FA,
+            0 0 30px #2AC9FA,
+            0 0 40px #2AC9FA;
+    }
+    100% {
+        border-color: #2AC9FA;
+        box-shadow: 
+        0 0 5px #2AC9FA,
+        0 0 10px #2AC9FA,
+        0 0 15px #2AC9FA,
+        0 0 20px #2AC9FA;
+    }
+}
+
 h1 {
     display: flex;
     align-items: center;
@@ -161,8 +188,8 @@ main {
                     & button {
                         color: white;
                         background-color: black; 
-                        border: 2px solid white; 
-                        animation: neon 1.5s ease-in-out infinite alternate;
+                        border: 5px solid white; 
+                        animation: neon-border 1.5s ease-in-out infinite alternate;
                         transform: scale(1.02);
                         box-shadow: #2AC9FA;
                     }
@@ -216,6 +243,12 @@ main {
                 }
                 & tr,td {
                     text-align: center;
+                    transition: 0.2s ease-in-out;
+                }
+                & tr:hover {
+                    border: 5px solid #2AC9FA;;
+                    transform: scale(1.01);
+                    animation: neon-border 1s infinite alternate;
                 }
             }
         }
