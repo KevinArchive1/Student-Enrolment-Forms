@@ -149,6 +149,7 @@ main {
                     & .input:focus {
                         border: 2px solid #2AC9FA;
                         outline: none;
+                        animation: neon-border 1s ease-in-out infinite alternate;
                     }
     
                     #radiobtn {
@@ -181,7 +182,7 @@ main {
                         border: 2px solid black;
                         color: black;
                         cursor: pointer;
-                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        transition: 0.4s ease-in-out;
                     }
                 }
                 & #submit:hover {
